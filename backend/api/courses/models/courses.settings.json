@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "name": "Courses",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "crn": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "max": {
+      "type": "integer"
+    },
+    "enrolled": {
+      "type": "integer"
+    },
+    "remaining": {
+      "type": "integer"
+    },
+    "waitlist": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Open",
+        "Waitlist",
+        "Full"
+      ]
+    },
+    "instructor": {
+      "type": "string"
+    },
+    "campus": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
