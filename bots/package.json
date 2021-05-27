@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "courses": "PWDEBUG=1 node src/scrapers/courses.js",
     "lint": "eslint src --ext .js",
     "lint:fix": "npm run lint -- --fix"
   },
@@ -12,11 +13,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "dotenv": "^10.0.0",
     "eslint": "^7.27.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.3",
     "eslint-plugin-prettier": "^3.4.0",
     "prettier": "^2.3.0"
+  },
+  "dependencies": {
+    "bull": "^3.22.6",
+    "playwright": "^1.11.1"
   }
 }
